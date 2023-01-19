@@ -26,7 +26,7 @@ except FileNotFoundError:
         port='COM4', 
         baud=115200, 
         start_of_frame='IMU:', 
-        feature_names=['AccelX', 'AccelY', 'AccelZ', 'GyroX', 'GyroY', 'GyroZ','Pitch','Roll']
+        feature_names=['AccelX', 'AccelY', 'AccelZ', 'GyroX', 'GyroY', 'GyroZ','Pitch','Roll'] #adding more data points could improve accuracy (magnetmeter);
     )
     imu_dataset = imu_collector.collect_many_classes(
         dataset_name='ContinuousMotion', 
